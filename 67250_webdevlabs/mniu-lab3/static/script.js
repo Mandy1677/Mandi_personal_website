@@ -75,4 +75,6 @@ function greetingFunc() {
     greetingElement.innerHTML = greetingMessage + ", my name is Mandi.";
 }
 
-greetingFunc();
+if (window.location.href.includes("index.html")) {
+    greetingFunc();
+}
