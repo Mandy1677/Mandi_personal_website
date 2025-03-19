@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandi Niu</title>
+    <meta name="author" content="Mandi Niu">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Mandi Niu professional website">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1>Mandi Niu</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="views/CV.html">CV</a> |
+            <a href="views/For_fun.html">For fun</a> |
+            <a href="views/Contact_me.html">Contact me</a>
+        </nav>
+    </header>
+    <div class="main">
+        <h2 id="greeting">Hi, my name is Mandi.</h2>
+        <img src="static/mandi.png" alt="Mandi Niu">
+        <p id="intro">I am a student at Carnegie Mellon University, studying Information Systems and Statistics and Machine Learning.</p>
+        <p id="bio">
+            <p id="shortBio">I love solving complex problems and building innovative solutions. In my free time, I enjoy reading, traveling, and coding.</p>
+            <p id="fullBio" style="display: none;">I love solving complex problems and building innovative solutions. In my free time, I enjoy reading, traveling, and coding. I am also passionate about data science and machine learning, and I often participate in hackathons to challenge myself and learn new skills. My goal is to use technology to make a positive impact on the world.</p>
+            <button id="readMoreBtn">Read More</button>
+            <button id="readLessBtn" style="display: none;">Read Less</button>
+        </p>
+    </div>
+    <footer>
+        <p>&copy; <span id="copyYear"></span> Mandi Niu</p>
+    </footer>
+</body>
+</html>
