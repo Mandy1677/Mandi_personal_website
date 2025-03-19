@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Mandi Niu</title>
+    <meta name="author" content="Mandi Niu">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Mandi Niu professional website">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1>Mandi Niu</h1>
+        <nav>
+            <a href="../index.html">Home</a> |
+            <a href="CV.html">CV</a> |
+            <a href="For_fun.html">For fun</a> |
+            <a href="Contact_me.html">Contact me</a>
+        </nav>
+    </header>
+    <div class="mainLayout">
+        <div class="item1">
+            <h2>Find Me</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.251676052724!2d-79.995534684603!3d40.44304897936105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f22a7b5b4a3b%3A0x8f1a3b5b5b5b5b5b!2sCarnegie%20Mellon%20University!5e0!3m2!1sen!2sus!4v1633025000000!5m2!1sen!2sus"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+        <div class="item2">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+                <span id="nameError" class="error"></span><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+                <span id="emailError" class="error"></span><br><br>
+                <label for="comment">Comment:</label><br>
+                <textarea id="comment" name="comment" required></textarea>
+                <span id="commentError" class="error"></span><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <table>
+                <tr>
+                    <th><strong>Contact Method:</strong></th>
+                    <th><strong>Description</strong></th>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>mniu@andrew.cmu.edu</td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td>+1 (412) 475-2110</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; <span id="copyYear"></span> Mandi Niu</p>
+    </footer>
+</body>
+</html>

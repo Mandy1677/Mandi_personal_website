@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Fun - Mandi Niu</title>
+    <meta name="author" content="Mandi Niu">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Mandi Niu professional website">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <header>
+        <h1>Mandi Niu</h1>
+        <nav>
+            <a href="../index.html">Home</a> |
+            <a href="CV.html">CV</a> |
+            <a href="For_fun.html">For fun</a> |
+            <a href="Contact_me.html">Contact me</a>
+        </nav>
+    </header>
+    <div class="mainLayout">
+        <div class="item1">
+            <h2>Things I do for fun!</h2>
+            <ul id="hobbiesList">
+                <li>Watch movies</li>
+                <li>Play video games</li>
+                <li>Sleep</li>
+            </ul>
+        </div>
+        <div class="item2">
+            <img class="funIMG" src="../static/fun.png" alt="For Fun">
+        </div>
+        <div class="item3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QSh34gyQby4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item4">
+            <div class="container">
+                <h2>Need some advice?</h2>
+                <p id="adviceText">Click the button to get some random advice!</p>
+                <button class="adviceButton" onclick="getAdvice()">Get Advice</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; <span id="copyYear"></span> Mandi Niu</p>
+    </footer>
+</body>
+</html>

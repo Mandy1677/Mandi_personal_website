@@ -85,14 +85,14 @@ function addYear() {
     document.getElementById("copyYear").textContent = currentYear;
 }
 
-function showList() {
-    const button = document.getElementById("showListButton");
-    const list = document.getElementById("hobbiesList");
+// function showList() {
+//     const button = document.getElementById("showListButton");
+//     const list = document.getElementById("hobbiesList");
 
-    list.style.display = "block";
+//     list.style.display = "block";
 
-    button.style.display = "none";
-}
+//     button.style.display = "none";
+// }
 
 $(document).ready(function () {
     $("#readMoreBtn").click(function () {
